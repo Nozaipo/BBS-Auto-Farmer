@@ -1,1 +1,0 @@
-py ./pots.py

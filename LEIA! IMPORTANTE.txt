@@ -1,0 +1,48 @@
+ORIENTAÇÕES BÁSICAS
+
+# CERTIFICADO PARA A PROXY
+
+- O bot faz uso de uma proxy que vai interceptar as conexões de rede do jogo e decidir qual caminho tomar. Para isso ser
+feito é necessário instalar um certificado de autoridade já disponibilizado na pasta "cert".
+
+Opções a se escolhe na instalação:
+-> usuário atual
+-> a próxima é somente o caminho do arquivo, não precisa alterar.
+-> pode deixar a senha em branco
+-> na aba de repositório de certificados marque "Colocar todos os certificados no repositório a seguir" e procure marque o
+repositório de "Autoridades de Certificação Raiz Confiáveis"
+-> agora é só concluir
+
+-> ao executar a proxy você pode acessar o site: mitm.it; lá contém mais informações sobre a instalação dos certificados
+em mais plataformas.
+
+# INFORMAÇÕES ÚTEIS
+
+- O bot foi testado em um computador com uma resolução padrão de 1366x768. E dentro do jogo em 1280x720.
+- Usado em fullscreen mas não o nativo do jogo, mas sim, forçando com o bordeless gaming.
+- O macro atualmente considera a compra de todos os itens essenciais da loja. Sendo 8202, de cada, na primeira parte e 6782,
+de cada, na outras partes. Caso queira alterar a quantidade é só abrir o arquivo bot.py na pasta "main" e procurar pelos
+valores.
+- Existe um arquivo chamado "_chronicle farmadas" na pasta macro que contém as informações que o bot usa pra tomar as
+decisões.
+- O bot foi feito pra farmar a chronicle totalmente só, ele transiciona entre as quests e partes e faz isso enquanto você
+tiver 10 ou mais tickets.
+- Ele sempre utiliza 10x para farmar.
+- Ele também sempre vai usar o que estiver no "clearence" da quest. Além disso, não foi implementado um revive. Então, use
+equipes bem equipadas e com uma boa estrategia.
+
+
+# FUNCIONAMENTO BÁSICO
+
+Ao executar o bot, vai ser informado se a proxy está ativa. Após isso, ele espera até o usuário entrar na tela inicial da
+Chronicle Quest. Ao entrar lá, analisando o arquivo "_chronicle farmadas" decide qual quest deve começar farmar. Quando um
+macro estiver sendo executado aparecerá um indicador no campo superior esquerdo. O macro espera o jogo está em 
+primeiro plano para executar, então é possível em algumas partes trocar de janela, se necessário, mas não recomendo.
+O bot irá farmar até ficar com menos de 10 tickets ou alcançar a meta de farm em todas as quests.
+
+# PROGRAMA USADO PARA OS MACROS
+
+- Para criar os macros foi usado Macro Recorder da JitBit. O programa está na pasta "utils" com o nome "Macro Recorder" e
+os macros usados como base estão em "macros\.base", caso queiram se aventurar em alterar alguma coisa.
+- Dentro da pasta do macro recorder tem o serial que deve ser usado pra obter a versão completa.
+

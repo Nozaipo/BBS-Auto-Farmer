@@ -1,0 +1,1 @@
+"./utils/app/python/python" "./main/main.py"

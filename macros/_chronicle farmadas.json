@@ -1,0 +1,18 @@
+{
+  "Parte 1": {
+    "bronze": false,
+    "prata": true,
+    "ouro": true
+  },
+  "Parte 2": {
+    "bronze": true,
+    "prata": true,
+    "ouro": true
+  },
+  "Parte 3": {
+    "bronze": true,
+    "prata": true,
+    "ouro": true
+  },
+  "LastMonthUpdate": 11
+}
